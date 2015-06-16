@@ -169,7 +169,7 @@ int main()
 	/* Create a task to output text read from romfs. */
 	xTaskCreate(command_prompt,
 	            (signed portCHAR *) "CLI",
-	            512 /* stack size */, NULL, tskIDLE_PRIORITY + 2, NULL);
+	            512 /* stack size */, NULL, tskIDLE_PRIORITY + 3, NULL);
 
 #if 0
 	/* Create a task to record system log. */
